@@ -1,0 +1,10 @@
+<div class='container' >
+	<h2  class="page-header" >GitHub - Issues</h2>
+
+	<a href="#/" >Return to search</a>
+
+	<div class="list-group">
+	  <div ng-repeat='item in repoData' class="list-group-item">{{item.title}} (status: {{item.state}}) comments: {{item.comments}}</div>
+	</div>
+	<div ng-if='showError' class='alert alert-warning'>{{errMessage}}</div>
+</div>
